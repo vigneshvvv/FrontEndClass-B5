@@ -1,0 +1,33 @@
+/* h1{ */
+    /* color: #A19D9D; */
+    /* color: rgb(186, 13, 13); */
+    /* text-align: center; */
+    /* background-color: aqua; */
+    /* font-size: 30px; */
+    /* border: dashed 3px; */
+    /* border-bottom: solid 2px; */
+    /* border-top: solid 2px; */
+    /* margin: 40px; */
+    /* margin-top: 30px; */
+    /* padding: 10px; */
+/* } */
+
+#titleTag{
+    /* color: #A19D9D; */
+    color: rgb(186, 13, 13);
+    text-align: center;
+    /* background-color: aqua; */
+    font-size: 30px;
+    border: dashed 3px;
+    /* border-bottom: solid 2px; */
+    /* border-top: solid 2px; */
+    /* margin: 40px; */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.secondaryTag{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
