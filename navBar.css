@@ -1,0 +1,34 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    /* background-color: black; */
+    padding: 16px;
+}
+
+li{
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+#loginList{
+    /* text-align: right; */
+    margin-left: 450px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#logintag{
+    color: white;
+}
