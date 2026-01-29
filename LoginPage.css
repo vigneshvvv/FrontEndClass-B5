@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(dm.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#loginDiv{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgb(0, 0, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+}
+#loginh1{
+    text-align: center;
+    color: white;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 4%;
+    border: 0px transparent;
+    box-shadow: 0 4px 12px rgb(0, 0, 2);
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 8%;
+    border: 0px transparent;
+    box-shadow: 0 4px 12px rgb(0, 0, 2);
+}
+
