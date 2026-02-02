@@ -1,0 +1,24 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid;
+    /* border-bottom: 1px solid; */
+    padding: 10px;
+}
+
+#overFlowExample{
+    width: 250px;
+    height: 150px;
+    background-color: aqua;
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+img{
+    width: 150px;
+    /* float: right; */
+    float: left;
+}
