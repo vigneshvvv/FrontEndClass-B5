@@ -76,3 +76,45 @@ if(result){
 //     "email": "abc@gmail.com",
 //     "mobile": 3412242
 // }
+
+let nestedJson = [
+    {
+         userId: 1,
+        userName: "vignesh",
+        password: "vignesh",
+        profession: {
+            Exp: 4,
+            workLocation: "chennai",
+            WFH_Allowed: false 
+        }
+    },
+    {
+         userId: 2,
+        userName: "svdsvsdcdc",
+        password: "vvsdvsdv",
+        profession: {
+            Exp: 6,
+            workLocation: "HYD",
+            WFH_Allowed: false 
+        }
+    },
+    {
+         userId: 3,
+        userName: "gsfdfsdfs",
+        password: "vignesh",
+        profession: {
+            Exp: 5,
+            workLocation: "Madurai",
+            WFH_Allowed: false 
+        }
+    }
+    
+]
+
+for(let i of nestedJson){
+    if(i.profession.workLocation === "chennai"){
+        i.profession.WFH_Allowed = true;
+        console.log(i);
+    }
+
+}
