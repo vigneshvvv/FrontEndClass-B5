@@ -103,7 +103,7 @@ let nestedJson = [
     },
     {
          userId: 3,
-        userName: "gsfdfsdfs",
+        userName: "VigneshKumar",
         password: "vignesh",
         profession: {
             Exp: 5,
@@ -179,7 +179,7 @@ let resultNew = false;
 
 function loginValidation() {
     for(let js of jsonSample){
-    if((js.userName === "vignesh" && js.password === "vignesh") || (js.userName === "Kumar" && js.password === "kumar")){
+    if((js.userName === "vignesh" && js.password === "kumar") || (js.userName === "Kumar" && js.password === "kumar")){
       console.log("The username password match successful");
         return true;
     }
@@ -197,3 +197,58 @@ console.log(resultNew);
 console.log(multiplyFunction(10,20))
 
 
+///array operations
+
+let testing = [10,9,2]
+testing.push(20);
+console.log(testing);
+
+let removed = testing.pop()
+console.log(removed);
+console.log(testing);
+
+let newtesting = [];
+for( let i of testing){
+    if(i > 2){
+        newtesting.push(i);
+    }
+}
+
+// console.log(newtesting);
+
+let resultN = testing.filter(a => a<2);
+
+if(resultN.length === 0){
+    console.log("Filtered output is empty");
+}
+console.log( "after the filter function", resultN);
+
+let findOutput = testing.find(a => a === 50);
+
+if(findOutput === undefined){
+    console.log("There are no values matching in the array");
+}
+console.log(findOutput);
+
+//checking login creds using find
+function loginValidatioNew(){
+    let outputNew = jsonSample.find(h => h.userName === "vignesh" && h.password === "Vignesh");
+    if(outputNew === undefined){
+        console.log("Either username or password is incorrect")
+    }
+    else{
+        console.log("login successful");
+    }
+}
+
+
+//checking login creds using filter
+function loginValidatioFilter(){
+    let outputNew = jsonSample.filter(h => h.userName === "vignesh" && h.password === "vignesh");
+    if(outputNew.length === 0){
+        console.log("Either username or password is incorrect")
+    }
+    else{
+        console.log(`Welcome back ${outputNew[0].userName}`);
+    }
+}
